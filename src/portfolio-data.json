@@ -1,0 +1,242 @@
+{
+  "profile": {
+    "name": "jyj",
+    "title": "Backend Engineer (Junior)",
+    "one_liner": "신뢰 가능한 API와 자동화된 배포 파이프라인에 진심인 백엔드 엔지니어",
+    "summary": "Spring Boot와 Node/Nest로 REST/GraphQL API를 설계·구현하고, Docker·GitHub Actions·AWS로 배포 자동화를 구성해 본 신입 백엔드 엔지니어입니다. 트래픽 이슈를 마주하면 쿼리 튜닝과 캐시 전략부터 고민하고, 프런트(React) 팀과 효율적인 협업을 위해 스키마-우선 API 설계를 선호합니다.",
+    "location": "Seoul, KR",
+    "email": "juyoungjeong.797@gmail.com",
+    "links": {
+      "github_url": "https://github.com/juyoung797",
+      "blog_url": "https://velog.io/@byo/posts",
+      "linkedin_url": "https://www.linkedin.com/in/your-linkedin"
+    },
+    "availability": "채용 제안 환영 · 2주 내 입사 가능",
+    "interests": [
+      "분산 시스템",
+      "Observability",
+      "Dev Productivity",
+      "SQL 튜닝",
+      "클린 아키텍처"
+    ]
+  },
+
+  "skills": {
+    "backend": [
+      "Java (17)",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Spring Security",
+      "Node.js (18+)",
+      "NestJS",
+      "Express",
+      "JWT/OAuth2",
+      "GraphQL"
+    ],
+    "databases": ["PostgreSQL", "MySQL", "Redis", "Prisma", "Flyway/Migration"],
+    "infra_devops": [
+      "Docker",
+      "GitHub Actions",
+      "AWS (EC2, RDS, S3, CloudFront, ALB, IAM)",
+      "NGINX",
+      "Terraform(기초)",
+      "Linux"
+    ],
+    "frontend": ["React", "Vite", "React Query", "TailwindCSS"],
+    "testing": [
+      "JUnit5",
+      "Mockito",
+      "Testcontainers",
+      "Jest",
+      "Supertest",
+      "k6(부하)"
+    ],
+    "observability": [
+      "OpenTelemetry(기초)",
+      "Prometheus",
+      "Grafana",
+      "ELK(기초)"
+    ],
+    "tools": ["Git", "Postman", "Insomnia", "DBeaver", "ESLint/Prettier"]
+  },
+
+  "education": [
+    {
+      "school": "OO대학교 컴퓨터공학과",
+      "degree": "B.S. Computer Science",
+      "period": "2019.03 - 2025.02",
+      "highlights": [
+        "데이터베이스/운영체제/네트워크/분산시스템 수강",
+        "캡스톤: 대용량 로그 파이프라인 설계 (Kafka 기초 활용)"
+      ]
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "스타트업 OO",
+      "role": "백엔드 인턴",
+      "period": "2024.07 - 2024.09",
+      "summary": "NestJS 기반 사용자/결제 API 유지보수 및 성능 개선",
+      "achievements": [
+        "N+1 쿼리 제거 및 인덱스 추가로 주문 조회 API p95 720ms → 210ms",
+        "GitHub Actions로 테스트·빌드·도커 이미지 푸시 자동화, 배포 시간 60% 단축",
+        "k6 부하테스트 시나리오 작성으로 임계 TPS 파악 및 캐시 레이어(Redis) 도입"
+      ],
+      "stack": [
+        "NestJS",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "GitHub Actions",
+        "AWS EC2/RDS"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "tastehub",
+      "name": "TasteHub — 맛집 리뷰 플랫폼",
+      "role": "백엔드 개발 (개인)",
+      "period": "2025.03 - 2025.05",
+      "summary": "리뷰/북마크/검색을 제공하는 맛집 플랫폼의 백엔드와 간단한 Admin React 대시보드 구현",
+      "responsibilities": [
+        "스키마-우선(OpenAPI)로 REST API 설계, Swagger 문서 자동화",
+        "PostgreSQL 정규화 + GIN 인덱스, 리뷰 키워드 검색 최적화",
+        "Redis 캐시로 인기 매장 랭킹 API 1.2s → 120ms",
+        "GitHub Actions + Docker + EC2에 무중단 배포(blue/green 간단 구현)",
+        "React Admin 대시보드로 운영 툴 제작"
+      ],
+      "stack": {
+        "backend": [
+          "Java",
+          "Spring Boot",
+          "Spring Data JPA",
+          "Spring Security"
+        ],
+        "frontend": ["React", "Vite", "React Query", "TailwindCSS"],
+        "infra": [
+          "AWS EC2",
+          "RDS (PostgreSQL)",
+          "S3",
+          "CloudFront",
+          "NGINX",
+          "Docker",
+          "GitHub Actions"
+        ],
+        "observability": ["Prometheus", "Grafana", "OpenTelemetry(기초)"]
+      },
+      "metrics": {
+        "users": 2100,
+        "peak_rps": 65,
+        "p95_latency_ms": 180,
+        "availability": "99.8% (30일)"
+      },
+      "links": {
+        "repo_backend": "https://github.com/your-github/tastehub-backend",
+        "repo_frontend": "https://github.com/your-github/tastehub-admin",
+        "demo_url": "https://tastehub.demo.app"
+      }
+    },
+    {
+      "id": "studylog",
+      "name": "StudyLog — 스터디 기록/출석 서비스",
+      "role": "백엔드/인프라 (팀 3명)",
+      "period": "2024.10 - 2024.12",
+      "summary": "스터디 그룹의 기록, 출석 체크, 캘린더 연동 API",
+      "responsibilities": [
+        "NestJS + Prisma로 CRUD/권한/리포트 API 구현",
+        "Google OAuth 로그인 및 JWT 리프레시 토큰 로테이션",
+        "S3에 이미지 업로드(서명 URL), CloudFront 캐싱",
+        "Terraform(기초)로 VPC/EC2/RDS IaC 템플릿"
+      ],
+      "stack": {
+        "backend": ["Node.js", "NestJS", "Prisma", "JWT", "Passport"],
+        "db": ["PostgreSQL"],
+        "infra": ["AWS S3/CloudFront/EC2", "Terraform (basic)", "Docker"],
+        "frontend": ["React (캘린더 관리 보조툴)"]
+      },
+      "metrics": {
+        "teams": 38,
+        "monthly_active_users": 340,
+        "p95_latency_ms": 230
+      },
+      "links": {
+        "repo": "https://github.com/your-github/studylog",
+        "demo_url": "https://studylog.demo.app"
+      }
+    },
+    {
+      "id": "paymini",
+      "name": "PayMini — 가벼운 결제 모듈 PoC",
+      "role": "백엔드 (개인)",
+      "period": "2024.06 - 2024.07",
+      "summary": "Webhooks, 서명 검증, 중복 결제 방지를 포함한 결제 연동 PoC",
+      "responsibilities": [
+        "멱등키 기반 결제 생성 API, 중복 요청 차단",
+        "결제 이벤트 Webhook 소비자 구현 및 재시도/백오프",
+        "테스트컨테이너로 통합 테스트 CI",
+        "React 샘플 상점 페이지 제공"
+      ],
+      "stack": {
+        "backend": ["Spring Boot", "Spring Retry", "JPA"],
+        "db": ["MySQL"],
+        "infra": ["Docker", "GitHub Actions"],
+        "frontend": ["React", "Vite"]
+      },
+      "links": {
+        "repo": "https://github.com/your-github/paymini"
+      }
+    }
+  ],
+
+  "open_source": [
+    {
+      "name": "awesome-spring-boot-starters",
+      "type": "Docs PR",
+      "summary": "문서 오타 수정 및 예제 코드 업데이트",
+      "link": "https://github.com/some/awesome-spring-boot-starters/pull/123"
+    },
+    {
+      "name": "nestjs/swagger",
+      "type": "Issue Report",
+      "summary": "Decorators 충돌 케이스 재현 리포트",
+      "link": "https://github.com/nestjs/swagger/issues/9999"
+    }
+  ],
+
+  "certifications": [
+    { "name": "정보처리기사", "year": 2024 },
+    { "name": "AWS Cloud Practitioner", "year": 2025 }
+  ],
+
+  "writing": [
+    {
+      "title": "신입이 겪은 쿼리 튜닝 여정: 인덱스와 실행 계획",
+      "date": "2025-06-15",
+      "url": "https://blog.hongsh.dev/posts/query-tuning-index-explain"
+    },
+    {
+      "title": "GitHub Actions로 스프링 부트 무중단 배포 맛보기",
+      "date": "2025-05-02",
+      "url": "https://blog.hongsh.dev/posts/gha-blue-green"
+    }
+  ],
+
+  "talks": [
+    {
+      "title": "팀이 행복해지는 API 문서화",
+      "event": "교내 동아리 세미나",
+      "date": "2025-04-20",
+      "slides_url": "https://slides.hongsh.dev/api-docs-for-teams"
+    }
+  ],
+
+  "contact": {
+    "cta": "새로운 팀과 함께 더 성장하고 싶습니다. 메일로 편하게 연락 주세요!",
+    "email": "h662hong@gmail.com",
+    "kakao_openchat_url": "https://open.kakao.com/o/your-chat"
+  }
+}
