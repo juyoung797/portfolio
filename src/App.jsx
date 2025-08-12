@@ -4,25 +4,35 @@ import portfolioData from "./portfolio-data.json";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
+import WritingSection from "./components/WritingSection";
+import Up from "./components/up";
 
 const App = () => {
   return (
-    <div className="min-h-screen">
-      <Header profile={portfolioData.profile} />
-      <AboutSection profile={portfolioData.profile}/>
-      <SkillsSection skills={portfolioData.skills}/>
-      <ProjectsSection projects={portfolioData.projects}/>
-      <ExperienceSection
-        experience={portfolioData.experience}
-        education={portfolioData.education}
-        certifications={portfolioData.certifications}
-      />
-      <footer className="py-8 px-4 text-center">
-        <p className="text-sm">
-          © 2025 {portfolioData.profile.name}. All rights reserved.
-        </p>
-      </footer>
-    </div>
+    <>
+      <div className="min-h-screen">
+        <Header profile={portfolioData.profile} />
+        <AboutSection profile={portfolioData.profile} />
+        <SkillsSection skills={portfolioData.skills} />
+        <ProjectsSection projects={portfolioData.projects} />
+        <ExperienceSection
+          experience={portfolioData.experience}
+          education={portfolioData.education}
+          certifications={portfolioData.certifications}
+        />
+        <WritingSection
+          writing={portfolioData.writing}
+          talks={portfolioData.talks}
+          openSource={portfolioData.open_source}
+        />
+        <footer className="py-8 px-4 text-center">
+          <p className="text-sm">
+            © 2025 {portfolioData.profile.name}. All rights reserved.
+          </p>
+        </footer>
+        <Up />
+      </div>
+    </>
   );
 };
 
