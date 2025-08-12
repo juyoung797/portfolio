@@ -3,7 +3,7 @@ import portfolioData from "./portfolio-data.json";
 
 const App = () => {
   return (
-    <div className="bg-red-100 min-h-screen">
+    <div className="min-h-screen">
       <Header profile={portfolioData.profile} />
       <footer className="py-8 px-4 text-center">
         <p className="text-sm">

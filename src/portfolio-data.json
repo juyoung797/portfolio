@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "jyj",
-    "title": "Backend Engineer (Junior)",
+    "title": "Web Developer (Junior)",
     "one_liner": "신뢰 가능한 API와 자동화된 배포 파이프라인에 진심인 백엔드 엔지니어",
     "summary": "Spring Boot와 Node/Nest로 REST/GraphQL API를 설계·구현하고, Docker·GitHub Actions·AWS로 배포 자동화를 구성해 본 신입 백엔드 엔지니어입니다. 트래픽 이슈를 마주하면 쿼리 튜닝과 캐시 전략부터 고민하고, 프런트(React) 팀과 효율적인 협업을 위해 스키마-우선 API 설계를 선호합니다.",
     "location": "Seoul, KR",
@@ -11,7 +11,7 @@
       "blog_url": "https://velog.io/@byo/posts",
       "linkedin_url": "https://www.linkedin.com/in/your-linkedin"
     },
-    "availability": "채용 제안 환영 · 2주 내 입사 가능",
+    "availability": "채용 제안 환영 · 즉시 합류 가능",
     "interests": [
       "분산 시스템",
       "Observability",
