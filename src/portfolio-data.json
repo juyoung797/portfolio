@@ -63,21 +63,21 @@
   "education": [
     {
       "school": "OO대학교 컴퓨터공학과",
-      "degree": "B.S. Computer Science",
-      "period": "2019.03 - 2025.02",
+      "degree": "Computer Science",
+      "period": "2018.03 - 2022.02",
       "highlights": [
         "데이터베이스/운영체제/네트워크/분산시스템 수강",
-        "캡스톤: 대용량 로그 파이프라인 설계 (Kafka 기초 활용)"
+        "캡스톤: "
       ]
     }
   ],
 
   "experience": [
     {
-      "company": "스타트업 OO",
-      "role": "백엔드 인턴",
-      "period": "2024.07 - 2024.09",
-      "summary": "NestJS 기반 사용자/결제 API 유지보수 및 성능 개선",
+      "company": "SI OO",
+      "role": "백엔드 개발",
+      "period": "2022.03 - 2023.09",
+      "summary": "데이터시각화 ",
       "achievements": [
         "N+1 쿼리 제거 및 인덱스 추가로 주문 조회 API p95 720ms → 210ms",
         "GitHub Actions로 테스트·빌드·도커 이미지 푸시 자동화, 배포 시간 60% 단축",
