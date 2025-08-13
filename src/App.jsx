@@ -5,7 +5,7 @@ import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import WritingSection from "./components/WritingSection";
-import Up from "./components/up";
+import Up from "./components/Up";
 import ContactSection from "./components/ContactSection";
 
 const App = () => {
