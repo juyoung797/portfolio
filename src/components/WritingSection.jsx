@@ -1,10 +1,10 @@
 import { Card, Badge, Button } from "@radix-ui/themes";
-import { FaBuilding, FaCalendarDays, FaLink } from "react-icons/fa6";
+import { FaBuilding, FaCalendarDays, FaGithub, FaLink } from "react-icons/fa6";
 import { MdSchool } from "react-icons/md";
 
 const WritingSection = ({ writing, talks, openSource }) => {
   return (
-    <section id="writing" className="py-20 px-4">
+    <section id="writing" className="py-20 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center gradient-text">
           Writing & Contributions
@@ -64,6 +64,33 @@ const WritingSection = ({ writing, talks, openSource }) => {
                 </div>
               </>
             )}
+          </div>
+
+          <div>
+            <h3 className="mb-6">Open Source</h3>
+            <div className="space-y-4">
+              {openSource.map((contribution, index) => (
+                <Card key={index} size={2}>
+                  <h4 className="mb-2">{contribution.name}</h4>
+                  <div className="mb-2">
+                    <span className="inline-block px-2 py-1 rounded text-xs">
+                      {contribution.type}
+                    </span>
+                  </div>
+                  <p className="text-sm mb-3">{contribution.summary}</p>
+                  <Button asChild variant="outline" size="sm">
+                    <a
+                      href={contribution.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub className="w-4 h-4 mr-2" />
+                      View Contribution
+                    </a>
+                  </Button>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>

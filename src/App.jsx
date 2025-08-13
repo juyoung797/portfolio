@@ -6,6 +6,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import WritingSection from "./components/WritingSection";
 import Up from "./components/up";
+import ContactSection from "./components/ContactSection";
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
           writing={portfolioData.writing}
           talks={portfolioData.talks}
           openSource={portfolioData.open_source}
+        />
+        <ContactSection
+          contact={portfolioData.contact}
         />
         <footer className="py-8 px-4 text-center">
           <p className="text-sm">
