@@ -8,13 +8,13 @@ const AboutSection = ({ profile }) => {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center gradient-text">About</h2>
 
-        <Card size="3" className="glass">
+        <Card size="3" className="glass ">
           <div className="flex items-center gap-2 mb-6">
             <FaLocationDot className="w-4 h-4"/>
             {profile.location}
           </div>
 
-          <p className="text-lg leading-relaxed mb-6">{profile.summary}</p>
+          <p className="text-lg leading-relaxed mb-6 font-sans">{profile.summary}</p>
 
           <div>
             <h3 className="mb-4">관심 분야</h3>

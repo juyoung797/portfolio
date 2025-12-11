@@ -11,7 +11,7 @@ import ContactSection from "./components/ContactSection";
 const App = () => {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen font-sans">
         <Header profile={portfolioData.profile} />
         <AboutSection profile={portfolioData.profile} />
         <SkillsSection skills={portfolioData.skills} />
@@ -31,7 +31,7 @@ const App = () => {
         />
         <footer className="py-8 px-4 text-center">
           <p className="text-sm">
-            © 2025 {portfolioData.profile.name}. All rights reserved.
+            © 2025 정주영. All rights reserved.
           </p>
         </footer>
         <Up />

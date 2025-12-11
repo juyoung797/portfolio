@@ -1,15 +1,15 @@
 {
   "profile": {
-    "name": "jyj",
-    "title": "Web Developer (Junior)",
-    "one_liner": "신뢰 가능한 API와 자동화된 배포 파이프라인에 진심인 백엔드 엔지니어",
-    "summary": "Spring Boot와 Node/Nest로 REST/GraphQL API를 설계·구현하고, Docker·GitHub Actions·AWS로 배포 자동화를 구성해 본 신입 백엔드 엔지니어입니다. 트래픽 이슈를 마주하면 쿼리 튜닝과 캐시 전략부터 고민하고, 프런트(React) 팀과 효율적인 협업을 위해 스키마-우선 API 설계를 선호합니다.",
+    "name": "안녕하세요, 정주영 입니다.",
+    "title": "꾸준히 발전하는 백엔드 개발 지원자",
+    "one_liner": "신뢰 가능한 API와 자동화된 배포 파이프라인에 진심입니다. \n작은 기능 하나도 꼼꼼히 다듬으며 유지보수와 확장성을 고려한 코드를 지향합니다.",
+    "summary": "Spring Boot로 REST API를 설계·구현하고, Docker·GitHub·AWS로 배포 자동화를 구성해 본 신입 백엔드 엔지니어입니다. 트래픽 이슈를 마주하면 쿼리 튜닝과 캐시 전략을 고민하고, React와 효율적인 연동을 위한 스키마 우선 API 설계를 선호합니다.",
     "location": "Seoul, KR",
     "email": "juyoungjeong.797@gmail.com",
     "links": {
       "github_url": "https://github.com/juyoung797",
       "blog_url": "https://velog.io/@byo/posts",
-      "linkedin_url": "https://www.linkedin.com/in/your-linkedin"
+      "linkedin_url": "https://www.linkedin.com/in/juyoung-jeong-548724387/"
     },
     "availability": "채용 제안 환영 · 즉시 합류 가능",
     "interests": [
@@ -28,21 +28,17 @@
       "Spring Data JPA",
       "Spring Security",
       "Node.js (18+)",
-      "NestJS",
-      "Express",
-      "JWT/OAuth2",
-      "GraphQL"
+      "JWT/OAuth2"
     ],
-    "databases": ["PostgreSQL", "MySQL", "Redis", "Prisma", "Flyway/Migration"],
+    "databases": ["PostgreSQL", "MySQL", "Redis"],
     "infra_devops": [
-      "Docker",
+      "Docker (green, blue)",
       "GitHub Actions",
-      "AWS (EC2, RDS, S3, CloudFront, ALB, IAM)",
+      "AWS (EC2, RDS, S3)",
       "NGINX",
-      "Terraform(기초)",
       "Linux"
     ],
-    "frontend": ["React", "Vite", "React Query", "TailwindCSS"],
+    "frontend": ["React", "Vite", "TailwindCSS"],
     "testing": [
       "JUnit5",
       "Mockito",
@@ -62,52 +58,67 @@
 
   "education": [
     {
-      "school": "OO대학교 컴퓨터공학과",
+      "school": "상명대학교 컴퓨터과학과 (서울캠퍼스)",
       "degree": "Computer Science",
       "period": "2018.03 - 2022.02",
-      "highlights": [
-        "데이터베이스/운영체제/네트워크/분산시스템 수강",
-        "캡스톤: "
-      ]
+      "highlights": ["데이터베이스/운영체제/네트워크/자료구조 등 수강"]
     }
   ],
 
   "experience": [
     {
-      "company": "SI OO",
-      "role": "백엔드 개발",
+      "company": "모코코",
+      "role": "웹포탈 개발",
       "period": "2022.03 - 2023.09",
-      "summary": "데이터시각화 ",
+      "summary": "웹포탈 개발 및 데이터시각화",
       "achievements": [
-        "N+1 쿼리 제거 및 인덱스 추가로 주문 조회 API p95 720ms → 210ms",
-        "GitHub Actions로 테스트·빌드·도커 이미지 푸시 자동화, 배포 시간 60% 단축",
-        "k6 부하테스트 시나리오 작성으로 임계 TPS 파악 및 캐시 레이어(Redis) 도입"
+        "Spring 기반 API 및 서버 로직 개발",
+        "MicroStrategy 기반 BI 데이터를 Spring MVC + JSP 구조의 사내 포털에 통합하는 작업 참여"
       ],
-      "stack": [
-        "NestJS",
-        "TypeScript",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "GitHub Actions",
-        "AWS EC2/RDS"
-      ]
+      "stack": ["jsp", "spring", "MicroStrategy"]
     }
   ],
 
   "projects": [
     {
-      "id": "tastehub",
-      "name": "TasteHub — 맛집 리뷰 플랫폼",
-      "role": "백엔드 개발 (개인)",
-      "period": "2025.03 - 2025.05",
-      "summary": "리뷰/북마크/검색을 제공하는 맛집 플랫폼의 백엔드와 간단한 Admin React 대시보드 구현",
+      "id": "stamppaw",
+      "name": "Stamppaw — 반려동물 산책 관리 서비스",
+      "role": "프론트/백엔드 (팀 4명)",
+      "period": "2025.11 - 2025.12",
+      "summary": "산책 관리 및 동행 / 커뮤니티 / 굿즈 마켓",
       "responsibilities": [
         "스키마-우선(OpenAPI)로 REST API 설계, Swagger 문서 자동화",
-        "PostgreSQL 정규화 + GIN 인덱스, 리뷰 키워드 검색 최적화",
-        "Redis 캐시로 인기 매장 랭킹 API 1.2s → 120ms",
+        "PostgreSQL 정규화 + GIN 인덱스, 키워드 검색 최적화",
+        "Redis 캐시로 랜덤 포인트 획득 성능 최적화",
         "GitHub Actions + Docker + EC2에 무중단 배포(blue/green 간단 구현)",
-        "React Admin 대시보드로 운영 툴 제작"
+        "Thymeleaf Admin 대시보드로 운영 화면 제작"
+      ],
+      "stack": {
+        "backend": ["Spring Boot", "JWT", "Spring Security"],
+        "db": ["PostgreSQL"],
+        "infra": ["AWS S3/CloudFront/EC2", "NGINX", "Docker", "koyeb"],
+        "frontend": ["React", "TailwindCSS", "Vite"]
+      },
+      "metrics": {
+        "teams": 38,
+        "monthly_active_users": 340,
+        "p95_latency_ms": 230
+      },
+      "links": {
+        "repo_backend": "https://github.com/StampPaw/stamppaw-backend",
+        "repo_frontend": "https://github.com/StampPaw/stamppaw-frontend",
+        "demo_url": "https://stamppaw-frontend.vercel.app/login"
+      }
+    },
+    {
+      "id": "plantory",
+      "name": "plantory — 식물 관리 및 커뮤니티 플랫폼",
+      "role": "프론트/백엔드 (팀 4명)",
+      "period": "2025.11 - 2025.11",
+      "summary": "커뮤니티 CRUD와 메인 화면 노출을 위한 쿼리 구현",
+      "responsibilities": [
+        "Google OAuth 로그인 및 JWT 리프레시 토큰 로테이션",
+        "S3에 이미지 업로드(URL)"
       ],
       "stack": {
         "backend": [
@@ -135,59 +146,7 @@
         "availability": "99.8% (30일)"
       },
       "links": {
-        "repo_backend": "https://github.com/your-github/tastehub-backend",
-        "repo_frontend": "https://github.com/your-github/tastehub-admin",
-        "demo_url": "https://tastehub.demo.app"
-      }
-    },
-    {
-      "id": "studylog",
-      "name": "StudyLog — 스터디 기록/출석 서비스",
-      "role": "백엔드/인프라 (팀 3명)",
-      "period": "2024.10 - 2024.12",
-      "summary": "스터디 그룹의 기록, 출석 체크, 캘린더 연동 API",
-      "responsibilities": [
-        "NestJS + Prisma로 CRUD/권한/리포트 API 구현",
-        "Google OAuth 로그인 및 JWT 리프레시 토큰 로테이션",
-        "S3에 이미지 업로드(서명 URL), CloudFront 캐싱",
-        "Terraform(기초)로 VPC/EC2/RDS IaC 템플릿"
-      ],
-      "stack": {
-        "backend": ["Node.js", "NestJS", "Prisma", "JWT", "Passport"],
-        "db": ["PostgreSQL"],
-        "infra": ["AWS S3/CloudFront/EC2", "Terraform (basic)", "Docker"],
-        "frontend": ["React (캘린더 관리 보조툴)"]
-      },
-      "metrics": {
-        "teams": 38,
-        "monthly_active_users": 340,
-        "p95_latency_ms": 230
-      },
-      "links": {
-        "repo": "https://github.com/your-github/studylog",
-        "demo_url": "https://studylog.demo.app"
-      }
-    },
-    {
-      "id": "paymini",
-      "name": "PayMini — 가벼운 결제 모듈 PoC",
-      "role": "백엔드 (개인)",
-      "period": "2024.06 - 2024.07",
-      "summary": "Webhooks, 서명 검증, 중복 결제 방지를 포함한 결제 연동 PoC",
-      "responsibilities": [
-        "멱등키 기반 결제 생성 API, 중복 요청 차단",
-        "결제 이벤트 Webhook 소비자 구현 및 재시도/백오프",
-        "테스트컨테이너로 통합 테스트 CI",
-        "React 샘플 상점 페이지 제공"
-      ],
-      "stack": {
-        "backend": ["Spring Boot", "Spring Retry", "JPA"],
-        "db": ["MySQL"],
-        "infra": ["Docker", "GitHub Actions"],
-        "frontend": ["React", "Vite"]
-      },
-      "links": {
-        "repo": "https://github.com/your-github/paymini"
+        "repo": "https://github.com/gitseoyeon/plantory"
       }
     }
   ],
@@ -209,7 +168,7 @@
 
   "certifications": [
     { "name": "정보처리기사", "year": 2024 },
-    { "name": "AWS Cloud Practitioner", "year": 2025 }
+    { "name": "SQLD", "year": 2025 }
   ],
 
   "writing": [
@@ -236,7 +195,6 @@
 
   "contact": {
     "cta": "새로운 팀과 함께 더 성장하고 싶습니다. 메일로 편하게 연락 주세요!",
-    "email": "juyoung@gmail.com",
-    "kakao_openchat_url": "https://open.kakao.com/o/your-chat"
+    "email": "juyoungjeong.797@gmail.com"
   }
 }

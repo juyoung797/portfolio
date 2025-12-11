@@ -12,7 +12,7 @@ const Header = ({ profile }) => {
   return (
     <header className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-blue-100 to-slate-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-6xl font-bold mb-8 animate-fade-in gradient-text">
+        <h1 className="text-6xl font-bold mb-8 animate-fade-in gradient-text whitespace-pre-line leading-normal">
           {profile.name}
         </h1>
         <h2
@@ -22,7 +22,7 @@ const Header = ({ profile }) => {
           {profile.title}
         </h2>
         <p
-          className="text-lg mb-8 text-gray-500 max-w-2xl mx-auto animate-fade-up"
+          className="text-lg mb-8 text-gray-500 max-w-2xl mx-auto animate-fade-up whitespace-pre-line"
           style={{ animationDelay: "0.4s" }}
         >
           {profile.one_liner}

@@ -28,12 +28,12 @@ const ContactSection = ({ contact }) => {
               </a>
             </Button>
 
-            <Button asChild variant="outline" size="3">
+            {/* <Button asChild variant="outline" size="3">
               <a href={contact.kakao_openchat_url}>
                 <FaRegCommentDots className="w-5 h-5 mr-2" />
                 KakaoTalk 오픈채팅
               </a>
-            </Button>
+            </Button> */}
           </div>
 
           <div className="mt-6 text-sm text-center">{contact.email}</div>

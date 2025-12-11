@@ -22,10 +22,19 @@
   }
 }
 
-/* Animation utilities */
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+/* 폰트 등록 */
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
 }
+
+
+/* 전역 기본 폰트 지정
+body {
+  font-family: 'Paperozi', sans-serif;
+} */
 
 .animate-fade-in {
   animation: fade-in 0.5s ease-out;
@@ -72,12 +81,12 @@ html {
 }
 
 /* Gradient text */
-/* .gradient-text {
+.gradient-text {
   background: linear-gradient(135deg, var(--accent-9), var(--accent-11));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-} */
+}
 
 .gradient-text {
   /* display: inline-block; */
@@ -86,4 +95,14 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Tailwind가 사용하는 --font-sans 변수 오버라이드 */
+:root {
+  --font-sans: 'Paperlogy', sans-serif;
+}
+
+/* 모든 텍스트 요소 강제 적용 */
+body, div, p, h1, h2, h3, h4, h5, h6, span, a, li {
+  font-family: var(--font-sans);
 }
